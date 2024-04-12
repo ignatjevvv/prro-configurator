@@ -156,7 +156,7 @@ function statusCountKey(keys) {
 
 /* ==================== GET DATA ON SERVER ==================== */
 // const routeServerIP = '84.246.80.172';
-const routeServerIP = '3.72.198.119';
+const routeServerIP = '216.24.57.4';
 // const routeServerIP = '127.0.0.1';
 const serverPort = '8000';
 
@@ -205,42 +205,3 @@ themeIcon.addEventListener('click', (e) => {
     themeIcon.classList.toggle('uil-sun');
     document.body.classList.toggle('light-theme');
 });
-
-
-
-// const sqlToggleSwitch = document.querySelector('#sql-query');
-// sqlToggleSwitch.addEventListener('click', querySQL);
-
-// async function querySQL() {
-//     let keysArr = arrKey;
-
-//     if (sqlToggleSwitch.checked && dataObjectReq) {
-//        let data = await getData("GET", `/query/?shop=${shop.value}&keys=${keysArr}&query=true`);
-
-//        mergeObjects(dataObjectReq, data);
-//     }
-// }
-
-// function mergeObjects(shopObj, sqlRequestObj) {
-//     shopObj.keys.map(item => { 
-//         let a = sqlRequestObj.find(key => key.key == item.key);
-//         Object.assign(item, a);
-//     });
-
-//     showInformationRRO(cridInputForm, fiscalNumber);
-// }
-
-// const cridInputForm = document.querySelector('#crid'),
-//       fiscalNumber = document.querySelector('#fiscalNumber'),
-//       keySelect = document.querySelector('#key');
-
-// function showInformationRRO(crid, finid) {
-//     crid.value = dataObjectReq.keys[0].crID;
-//     finid.value = dataObjectReq.keys[0].finID;
-
-//     keySelect.addEventListener('change', (e) => {
-//         const index = keySelect.selectedIndex;
-//         crid.value = dataObjectReq.keys[index].crID;
-//         finid.value = dataObjectReq.keys[index].finID;
-//     });
-// }
