@@ -1,130 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRRO / Configurator</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="/css/style_v3.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="configurator">
-        <div class="container">
+      <div class="container">
+        <div class="header">
+          <div class="logo">PRRO / <span>Configurator</span></div>
 
-            <div class="header">
-                <div class="logo">
-                    PRRO / <span>Configurator</span>
-                </div>
-
-                <div class="header_option">
-                    <!-- <div class="btn_sql">
-                        Sync data
-                        <label class="switch">
-                            <input type="checkbox" name="sql-query" id="sql-query">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
- 
-                    <div class="sql">
-                        <span class="sql">
-                            <i class="uil uil-database"></i>
-                        </span>
-                    </div>
-
-                    <div class="upload">
-                        <span class="upload">
-                            <i class="uil uil-upload-alt"></i>
-                        </span>
-                    </div>
-     -->
-                    <div class="theme">
-                        <span class="theme">
-                            <i class="uil uil-moon change-theme uil-sun"></i>
-                            <!-- <i class="uil uil-moon"></i> -->
-                        </span>
-                    </div>
-                </div>
+          <div class="header_option">
+            <div class="theme">
+              <span class="theme">
+                <i class="uil uil-moon change-theme uil-sun"></i>
+                <!-- <i class="uil uil-moon"></i> -->
+              </span>
             </div>
-
-
-            <div class="input_wrapper">
-                <form class="form_prro" id="form">
-
-                    <div class="input_form">
-                        <label for="POST-name">Магазин</label>
-                        <input class="input_prro" type="text" id="shop" name="shop" placeholder="0" maxlength="6">
-                        <span class="dot"></span>
-                    </div>
-
-                    <div class="input_form">
-                        <label for="POST-ip">IP</label>
-                        <input class="input_prro" type="text" id="ip" name="ip" placeholder="00.00.00.00" maxlength="13">
-                    </div>
-
-                    <div class="input_form">
-                        <label for="POST-com">COM</label>
-                        <input class="input_prro" type="text" id="com" name="com" value="1" maxlength="1">
-                    </div>
-
-                    <div class="input_form">
-                        <label for="POST-terminal-pb">Приват</label>
-                        <!-- <input type="radio" name="privat" id="terminal" class="custom-radio"> -->
-
-                        <input type="radio" name="terminal" id="terminal" value="71" class="custom-radio">
-                    </div>
-
-                    <div class="input_form">
-                        <label for="POST-crid">CRID</label>
-                        <input class="input_prro" type="text" id="crid" name="crid" placeholder="0" maxlength="5">
-                    </div>
-
-                    <div class="input_form">
-                        <label for="POST-fiskal">ФН</label>
-                        <input class="input_prro" type="text" id="fiscalNumber" name="fiscalNumber" placeholder="0000000000" maxlength="10">
-                    </div>
-
-                    <div class="input_form">
-                        <label for="POST-key">Key</label>
-                        <!-- <input class="input_prro" type="text" id="key" name="key"> -->
-                        <select id="key" name="key">
-                            <!-- <option value="iphone 6s">450</option>
-                            <option value="lumia 950">950</option>
-                            <option value="nexus 5x">960</option> -->
-                        </select>
-                        
-                        <span class="key-status"></span>
-                    </div>
-
-                    <div class="input_form">
-                        <label for="POST-terminal-ob">Ощад</label>
-                        <!-- <input type="radio" name="oshad" id="bankTerminal"> -->
-                        <input type="radio" name="terminal" id="terminal" value="17862" class="custom-radio">
-                    </div>
-
-                    <div class="btn-menu">
-                        <input class="btn lock" type="submit" id="push" value="Get config" disabled>
-                    </div>
-                </form>
-
-                <form class="form_receipt" id="form-receipt">
-                    <input class="input_receipt" name="Text" id="text" type="text" maxlength="30" value="ТОВ &#34;РУШ&#34; Магазин &#34;EVA&#34;">
-                    <input class="input_receipt" name="Text1" id="text1" type="text" maxlength="30">
-                    <input class="input_receipt" name="Text2" id="text2" type="text" maxlength="30">
-                    <input class="input_receipt" name="Text3" id="text3" type="text" maxlength="30">
-                    <input class="input_receipt" name="Text4" id="text4" type="text" maxlength="30">
-                    <input class="btn" type="submit" id="push" value="Get receipt">
-                </form>
-            </div>
+          </div>
         </div>
+
+        <div class="input_wrapper">
+          <form class="form_prro" id="form">
+            <div class="input_form">
+              <label for="POST-name">Магазин</label>
+              <input
+                class="input_prro"
+                type="text"
+                id="shop"
+                name="shop"
+                placeholder="0"
+                maxlength="6"
+              />
+              <span class="dot"></span>
+            </div>
+
+            <div class="input_form">
+              <label for="POST-ip">IP</label>
+              <input
+                class="input_prro"
+                type="text"
+                id="ip"
+                name="ip"
+                placeholder="00.00.00.00"
+                maxlength="13"
+              />
+            </div>
+
+            <div class="input_form">
+              <label for="POST-com">COM</label>
+              <input
+                class="input_prro"
+                type="text"
+                id="com"
+                name="com"
+                value="1"
+                maxlength="1"
+              />
+            </div>
+
+            <div class="input_form">
+              <label for="POST-terminal-pb">Приват</label>
+              <!-- <input type="radio" name="privat" id="terminal" class="custom-radio"> -->
+
+              <input
+                type="radio"
+                name="terminal"
+                id="terminal"
+                value="71"
+                class="custom-radio"
+              />
+            </div>
+
+            <div class="input_form">
+              <label for="POST-crid">CRID</label>
+              <input
+                class="input_prro"
+                type="text"
+                id="crid"
+                name="crid"
+                placeholder="0"
+                maxlength="5"
+              />
+            </div>
+
+            <div class="input_form">
+              <label for="POST-fiskal">ФН</label>
+              <input
+                class="input_prro"
+                type="text"
+                id="fiscalNumber"
+                name="fiscalNumber"
+                placeholder="0000000000"
+                maxlength="10"
+              />
+            </div>
+
+            <div class="input_form">
+              <label for="POST-key">Key</label>
+              <select id="key" name="key"></select>
+              <span class="key-status"></span>
+            </div>
+
+            <div class="input_form">
+              <label for="POST-terminal-ob">Ощад</label>
+              <input
+                type="radio"
+                name="terminal"
+                id="terminal"
+                value="17862"
+                class="custom-radio"
+              />
+            </div>
+
+            <div class="btn-menu">
+              <input
+                class="btn lock"
+                type="submit"
+                id="push"
+                value="Get config"
+                disabled
+              />
+            </div>
+          </form>
+
+          <form class="form_receipt" id="form-receipt">
+            <input
+              class="input_receipt"
+              name="Text"
+              id="text"
+              type="text"
+              maxlength="30"
+              value="ТОВ &#34;РУШ&#34; Магазин &#34;EVA&#34;"
+            />
+            <input
+              class="input_receipt"
+              name="Text1"
+              id="text1"
+              type="text"
+              maxlength="30"
+            />
+            <input
+              class="input_receipt"
+              name="Text2"
+              id="text2"
+              type="text"
+              maxlength="30"
+            />
+            <input
+              class="input_receipt"
+              name="Text3"
+              id="text3"
+              type="text"
+              maxlength="30"
+            />
+            <input
+              class="input_receipt"
+              name="Text4"
+              id="text4"
+              type="text"
+              maxlength="30"
+            />
+            <input class="btn" type="submit" id="push" value="Get receipt" />
+          </form>
+        </div>
+      </div>
     </div>
 
-
-
-    <script src="/js/script_03.js"></script>
-</body>
-
+    <script src="/js/script.js"></script>
+  </body>
 </html>
