@@ -2,7 +2,7 @@
   "name": "prro",
   "version": "1.0.0",
   "description": "",
-  "main": "app_test.js",
+  "main": "app.js",
   "engines": {
     "node": "18.16.1"
   },
