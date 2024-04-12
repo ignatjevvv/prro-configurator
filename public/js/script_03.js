@@ -156,12 +156,12 @@ function statusCountKey(keys) {
 
 /* ==================== GET DATA ON SERVER ==================== */
 // const routeServerIP = '84.246.80.172';
-const routeServerIP = '216.24.57.4';
+const routeServerIP = 'prro-configurator.onrender.com';
 // const routeServerIP = '127.0.0.1';
 const serverPort = '8000';
 
 function getData(method, path) {
-    return fetch(`http://${routeServerIP}:${serverPort}` + path, {
+    return fetch(`https://${routeServerIP}:${serverPort}` + path, {
         method: method,
     })
     .then((response) => response.json())
