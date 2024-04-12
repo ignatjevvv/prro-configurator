@@ -1,0 +1,28 @@
+{
+    "Products": [],
+    "Operators": [],
+    "FiscalReceiptCount": 0,
+    "ReturnReceiptCount": 0,
+    "NonFiscalReceiptCount": 1,
+    "TotalSumIn": 0,
+    "Receipt": null,
+    "ReturnReceipt": null,
+    "NonFiscalReceipt": null,
+    "TotalSumOut": 0,
+    "DfsLink": null,
+    "Header": [
+        "ТОВ \"РУШ\" Магазин \"EVA\"",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "Footer": [
+        "",
+        ""
+    ],
+    "LastAddedProduct": null,
+    "ReceiptSum": 0.00,
+    "LastFiscalNumber": null
+}
